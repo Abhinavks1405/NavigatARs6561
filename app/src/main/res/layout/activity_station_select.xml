@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <!-- Welcome Text -->
+    <LinearLayout
+        android:id="@+id/IconLayout"
+        android:layout_width="match_parent"
+        android:layout_height="485dp"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="@string/welcome_string"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"/>
+
+    <!-- Station Icon -->
+    <ImageView
+        android:id="@+id/stationIcon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/train_icon" /> <!-- Replace with your actual drawable resource -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_station_select"
+        android:layout_below="@+id/IconLayout">
+    <!-- Station Selection -->
+    <TextView
+        android:id="@+id/labelSelectStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:text="Select your Station"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerStation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_input_field"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:entries="@array/stations" /> <!-- Define your stations in res/values/arrays.xml -->
+
+    <!-- Navigation Button -->
+    <Button
+        android:id="@+id/buttonNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Find your way"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</RelativeLayout>

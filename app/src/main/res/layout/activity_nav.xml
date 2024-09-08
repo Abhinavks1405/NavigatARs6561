@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<image>
+    <title>Welcome to Station_Name!</title>
+    <search-bar>
+        <label>Search Your Destination</label>
+        <input type="text" placeholder="Search Your Destination"/>
+        <microphone-icon/>
+    </search-bar>
+    <map>
+        <marker label="Jai Prakash Nagar" coordinates="latitude,longitude"/>
+        <marker label="Pizza Hub" coordinates="latitude,longitude"/>
+        <marker label="Your Location" coordinates="latitude,longitude"/>
+        <street-name>5th Pustha Rd</street-name>
+        <street-number>Street Number</street-number>
+        <lane-number>Gali No: 4</lane-number>
+    </map>
+    <buttons>
+        <button label="Open your camera" icon="camera"/>
+        <button label="Start your Navigation"/>
+    </buttons>
+</image>

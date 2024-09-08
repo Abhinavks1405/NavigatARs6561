@@ -1,0 +1,102 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="model"
+            type="com.sih.railwaynavapp.SignInPage.SignInViewModel" />
+    </data>
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <!-- Top Image/Illustration -->
+    <ImageView
+        android:id="@+id/illustration_image"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/verification_image"
+        android:contentDescription="OTP Verification Illustration"
+        android:layout_gravity="center" />
+
+    <!-- Space between image and text -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!-- OTP Verification Heading -->
+    <TextView
+        android:id="@+id/otp_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP Verification"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Instruction Text -->
+    <TextView
+        android:id="@+id/otp_subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter email and phone number to send one time Password"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Email Input Field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_input_field"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Email"
+            tools:text="dscode@gmail.com"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/transparent"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <!-- Phone Number Input Field -->
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        tools:text="+44 9999999999"
+        android:inputType="phone"
+        android:textSize="16sp"
+        android:background="@drawable/bg_input_field"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+</layout>

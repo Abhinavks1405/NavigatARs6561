@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_arrow"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentStart="true"
+        android:contentDescription="Back Button"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Verification Code Title -->
+    <TextView
+        android:id="@+id/verification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification Code"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="start"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Subtext -->
+    <TextView
+        android:id="@+id/verification_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We have sent the verification code to your email address"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        android:layout_gravity="start"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Code Input Fields -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <!-- Single Code Digit Input 1 -->
+        <EditText
+            android:id="@+id/digit_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_code_input"
+            android:gravity="center"
+            tools:text="8"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@android:color/black"
+            android:focusable="false"
+            android:layout_margin="8dp" />
+
+        <!-- Single Code Digit Input 2 -->
+        <EditText
+            android:id="@+id/digit_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_code_input"
+            android:gravity="center"
+            tools:text="5"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@android:color/black"
+            android:focusable="false"
+            android:layout_margin="8dp" />
+
+        <!-- Single Code Digit Input 3 -->
+        <EditText
+            android:id="@+id/digit_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_code_input_selected"
+            android:gravity="center"
+            tools:text="2"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@android:color/black"
+            android:layout_margin="8dp" />
+
+        <!-- Single Code Digit Input 4 -->
+        <EditText
+            android:id="@+id/digit_4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_code_input"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@android:color/black"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="center" />
+
+</LinearLayout>

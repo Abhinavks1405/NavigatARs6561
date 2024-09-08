@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <!-- Top padding/margin for the app logo -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/train_image"
+        android:layout_gravity="center"
+        android:contentDescription="App Logo" />
+
+    <!-- Space between logo and text -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <!-- Text asking for language selection -->
+    <TextView
+        android:id="@+id/select_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select your language"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Button for Hindi language selection -->
+    <Button
+        android:id="@+id/button_hindi"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="हिंदी"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <!-- Button for English language selection -->
+    <Button
+        android:id="@+id/button_english"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="ENGLISH"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

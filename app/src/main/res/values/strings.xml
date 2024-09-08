@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RailwayNavApp</string>
+    <string name="open_camera">Open Your Camera</string>
+    <string name="welcome_string">Welcome to RailwayNavApp</string>
+
+    <string-array name="stations">
+        <item>Station 1</item>
+        <item>Station 2</item>
+        <item>Station 3</item>
+        <item>Station 4</item>
+    </string-array>
+</resources>
