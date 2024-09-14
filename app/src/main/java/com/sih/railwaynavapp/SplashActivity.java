@@ -10,10 +10,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.sih.railwaynavapp.LanguageScreen.LanguageSelectScreen;
 import com.sih.railwaynavapp.NavScreen.NavScreen;
-import com.sih.railwaynavapp.SignInPage.SignInPage;
+import com.sih.railwaynavapp.R;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
     @Override
@@ -34,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
     }
     protected void initObserver(){
         if(mAuth.getCurrentUser() == null){
-            startActivity(new Intent(MainActivity.this , SignInPage.class));
+            startActivity(new Intent(SplashActivity.this , LanguageSelectScreen.class));
         }else{
-            startActivity(new Intent(MainActivity.this , NavScreen.class));
+            startActivity(new Intent(SplashActivity.this , NavScreen.class));
         }
     }
 }

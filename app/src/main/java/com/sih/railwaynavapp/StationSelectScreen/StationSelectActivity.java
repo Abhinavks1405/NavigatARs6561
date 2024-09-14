@@ -1,29 +1,37 @@
 package com.sih.railwaynavapp.StationSelectScreen;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.sih.railwaynavapp.NavScreen.NavScreen;
+import com.sih.railwaynavapp.databinding.ActivityStationSelectBinding;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
 import com.sih.railwaynavapp.R;
 
-public class StationSelectActivity extends AppCompatActivity {
 
+public class StationSelectActivity extends AppCompatActivity {
+    private ActivityStationSelectBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+        binding = ActivityStationSelectBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        binding.setLifecycleOwner(this);
         setContentView(R.layout.activity_station_select);
         init();
     }
     protected void init(){
-        initObserver();
+        initListener();
     }
-    protected void initObserver(){
-
+    protected void initListener(){
+       String station = binding.spinnerStation.getSelectedItem().toString();
+       binding.buttonNavigate.setOnClickListener(view -> {
+             Intent intent = new Intent(StationSelectActivity.this, NavScreen.class);
+             intent.putExtra("station",station);
+             startActivity(intent);
+       });
 
     }
 

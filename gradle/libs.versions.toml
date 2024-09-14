@@ -1,5 +1,8 @@
 [versions]
 agp = "8.6.0"
+androidxRoomCompiler = "2.6.1.1"
+composeBom = "2024.09.01"
+constraintlayoutCompose = "1.0.1"
 firebaseBom = "33.2.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -11,8 +14,21 @@ constraintlayout = "2.1.4"
 playServicesMaps = "19.0.0"
 googleGmsGoogleServices = "4.4.2"
 firebaseAuth = "23.0.0"
+roomCompiler = "2.6.1"
+roomCompilerVersion = "2.6.1"
+roomKtx = "2.6.1"
+roomRuntime = "2.6.1"
+roomRuntimeVersion = "2.6.1"
+roomRxjava2 = "2.6.1"
+symbolProcessingApi = "1.9.10-1.0.13"
+databindingCompiler = "8.6.0"
+symbolProcessingApiVersion = "2.0.20-1.0.25"
+uiTooling = "1.7.1"
+uiToolingPreview = "1.7.1"
 
 [libraries]
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayoutCompose" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 google-firebase-auth = { module = "com.google.firebase:firebase-auth" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -24,6 +40,20 @@ activity = { group = "androidx.activity", name = "activity", version.ref = "acti
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+room-compiler-v260 = { module = "androidx.room:room-compiler", version.ref = "roomCompilerVersion" }
+room-compiler-v2611 = { module = "androidx.room:room-compiler", version.ref = "androidxRoomCompiler" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+room-runtime-v260 = { module = "androidx.room:room-runtime", version.ref = "roomRuntimeVersion" }
+room-rxjava2 = { module = "androidx.room:room-rxjava2", version.ref = "roomRxjava2" }
+symbol-processing-api = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "symbolProcessingApi" }
+databinding-compiler = { group = "androidx.databinding", name = "databinding-compiler", version.ref = "databindingCompiler" }
+symbol-processing-api-v11001013 = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "symbolProcessingApiVersion" }
+ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "uiTooling" }
+ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreview" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
