@@ -1,11 +1,7 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable
-            name="model"
-            type="com.sih.railwaynavapp.SignInPage.SignInViewModel" />
-    </data>
+
     <LinearLayout 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -69,9 +65,10 @@
             android:hint="Email"
             tools:text="dscode@gmail.com"
             android:textSize="16sp"
+            android:textColor="@color/black"
             android:inputType="textEmailAddress"
             android:background="@android:color/transparent"
-            android:focusable="false" />
+            />
     </LinearLayout>
 
     <!-- Phone Number Input Field -->
@@ -80,6 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Phone Number"
+        android:textColor="@color/black"
         tools:text="+44 9999999999"
         android:inputType="phone"
         android:textSize="16sp"

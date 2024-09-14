@@ -22,11 +22,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LanguageScreen.LanguageSelectScreen"/>
-        <activity android:name=".NavScreen.NavScreen"/>
-        <activity android:name=".OTPScreen.OTPScreen"/>
-        <activity android:name=".SignInPage.SignInPage"/>
-        <activity android:name=".StationSelectScreen.StationSelectActivity"/>
+        <activity android:name=".LanguageScreen.LanguageSelectScreen"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity android:name=".NavScreen.NavScreen"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity android:name=".OTPScreen.OTPScreen"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity android:name=".SignInPage.SignInPage"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity android:name=".StationSelectScreen.StationSelectActivity"
+            android:configChanges="orientation|screenSize"
+            />
 
     </application>
 

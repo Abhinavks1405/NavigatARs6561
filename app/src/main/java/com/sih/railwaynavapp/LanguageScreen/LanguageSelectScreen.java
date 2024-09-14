@@ -10,7 +10,6 @@ import com.sih.railwaynavapp.CommonCodes;
 import com.sih.railwaynavapp.R;
 import com.sih.railwaynavapp.SignInPage.SignInPage;
 import com.sih.railwaynavapp.databinding.ActivityLanguageBinding;
-import com.sih.railwaynavapp.databinding.ActivitySigninBinding;
 
 public class LanguageSelectScreen  extends AppCompatActivity {
     private ActivityLanguageBinding binding;
@@ -21,7 +20,6 @@ public class LanguageSelectScreen  extends AppCompatActivity {
         setContentView(binding.getRoot());
         binding.setLifecycleOwner(this);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_otp);
         init();
     }
     protected void init(){

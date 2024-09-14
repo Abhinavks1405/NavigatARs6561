@@ -9,7 +9,7 @@ import com.sih.railwaynavapp.data.UserDatabase;
 import com.sih.railwaynavapp.data.UserEntity;
 
 public class OTPViewModel extends ViewModel {
-    private UserDatabase db;
+    private final UserDatabase db;
 
     public OTPViewModel(Application application) {
         db = ((NavApp) application).getDatabase();

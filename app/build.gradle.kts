@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.google.gms.google.services)
     id("kotlin-android")
-    id("com.google.devtools.ksp") version "1.9.0-1.0.11"
+    id("com.google.devtools.ksp") version "1.9.0-1.0.13"
 }
 
 android {
@@ -17,6 +17,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    composeOptions{
+        kotlinCompilerExtensionVersion = "1.9.10"
     }
     buildTypes {
         release {
@@ -40,7 +43,6 @@ dependencies {
     // Firebase
     implementation(platform(libs.firebase.bom))
     implementation(libs.google.firebase.auth)
-
     // Room
     implementation(libs.room.runtime.v260)
     implementation(libs.constraintlayout.compose)

@@ -22,7 +22,6 @@ public class SignInPage  extends AppCompatActivity {
         setContentView(binding.getRoot());
         binding.setLifecycleOwner(this);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_signin);
         init();
     }
 

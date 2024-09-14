@@ -19,7 +19,6 @@ public class StationSelectActivity extends AppCompatActivity {
         binding = ActivityStationSelectBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.setLifecycleOwner(this);
-        setContentView(R.layout.activity_station_select);
         init();
     }
     protected void init(){

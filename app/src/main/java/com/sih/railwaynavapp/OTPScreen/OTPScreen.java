@@ -26,9 +26,6 @@ import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.sih.railwaynavapp.Constants;
-import com.sih.railwaynavapp.LanguageScreen.LanguageSelectScreen;
-import com.sih.railwaynavapp.NavScreen.NavScreen;
-import com.sih.railwaynavapp.R;
 import com.sih.railwaynavapp.StationSelectScreen.StationSelectActivity;
 import com.sih.railwaynavapp.data.UserEntity;
 import com.sih.railwaynavapp.databinding.ActivityOtpBinding;
@@ -52,7 +49,6 @@ public class OTPScreen  extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         viewModel = new ViewModelProvider(this).get(OTPViewModel.class);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_otp);
         init();
     }
 
