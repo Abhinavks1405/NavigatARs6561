@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.fdgs.indoornav.launcher-debug-80:/mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "com.fdgs.indoornav.launcher-main-82:/mipmap-anydpi-v26/app_icon_round.xml"
+    },
+    {
+        "merged": "com.fdgs.indoornav.launcher-debug-80:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.fdgs.indoornav.launcher-main-82:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.fdgs.indoornav.launcher-debug-80:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.fdgs.indoornav.launcher-main-82:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.fdgs.indoornav.launcher-debug-80:/mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "com.fdgs.indoornav.launcher-main-82:/mipmap-anydpi-v26/app_icon.xml"
+    },
+    {
+        "merged": "com.fdgs.indoornav.launcher-debug-80:/mipmap-mdpi_train_image.png.flat",
+        "source": "com.fdgs.indoornav.launcher-main-82:/mipmap-mdpi/train_image.png"
+    },
+    {
+        "merged": "com.fdgs.indoornav.launcher-debug-80:/mipmap-mdpi_app_icon.png.flat",
+        "source": "com.fdgs.indoornav.launcher-main-82:/mipmap-mdpi/app_icon.png"
+    }
+]

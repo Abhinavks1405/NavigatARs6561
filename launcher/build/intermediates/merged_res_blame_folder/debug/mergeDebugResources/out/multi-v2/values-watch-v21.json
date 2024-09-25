@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.fdgs.indoornav.launcher-mergeDebugResources-78:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Bhrigu\\.gradle\\caches\\transforms-4\\b006bde0ea20c0c1d90e05bc19fb9b3b\\transformed\\appcompat-1.7.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,681 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.fdgs.indoornav"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="0.1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+10        android:targetSdkVersion="34" />
+11
+12    <supports-screens
+12-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:7:3-163
+13        android:anyDensity="true"
+13-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:7:135-160
+14        android:largeScreens="true"
+14-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:7:78-105
+15        android:normalScreens="true"
+15-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:7:49-77
+16        android:smallScreens="true"
+16-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:7:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:7:106-134
+18
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:5-67
+19-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:22-64
+20
+21    <uses-feature android:glEsVersion="0x00030000" />
+21-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:5-54
+21-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:19-51
+22    <uses-feature
+22-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:5-13:36
+23        android:name="android.hardware.touchscreen"
+23-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:9-52
+24        android:required="false" />
+24-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:9-33
+25    <uses-feature
+25-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:5-16:36
+26        android:name="android.hardware.touchscreen.multitouch"
+26-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:9-63
+27        android:required="false" />
+27-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:9-33
+28    <uses-feature
+28-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:17:5-19:36
+29        android:name="android.hardware.touchscreen.multitouch.distinct"
+29-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:18:9-72
+30        android:required="false" />
+30-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:9-33
+31
+32    <uses-permission android:name="android.permission.CAMERA" />
+32-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:5-65
+32-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:22-62
+33
+34    <uses-feature
+34-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:23:5-25:35
+35        android:name="android.hardware.camera.ar"
+35-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:9-50
+36        android:required="true" />
+36-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:9-32
+37    <uses-feature
+37-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:26:5-28:35
+38        android:name="com.google.ar.core.depth"
+38-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:9-48
+39        android:required="true" />
+39-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:9-32
+40
+41    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+41-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
+41-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:26:22-76
+42    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+42-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\68391ae6520ae9da815e144db116b011\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+42-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\68391ae6520ae9da815e144db116b011\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+43
+44    <permission
+44-->[androidx.core:core:1.13.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\58bfe695e7134e003662dc8a05f18e1e\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+45        android:name="com.fdgs.indoornav.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+45-->[androidx.core:core:1.13.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\58bfe695e7134e003662dc8a05f18e1e\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+46        android:protectionLevel="signature" />
+46-->[androidx.core:core:1.13.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\58bfe695e7134e003662dc8a05f18e1e\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+47
+48    <uses-permission android:name="com.fdgs.indoornav.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+48-->[androidx.core:core:1.13.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\58bfe695e7134e003662dc8a05f18e1e\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+48-->[androidx.core:core:1.13.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\58bfe695e7134e003662dc8a05f18e1e\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+49    <uses-permission android:name="android.permission.REORDER_TASKS" />
+49-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:24:5-72
+49-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:24:22-69
+50
+51    <queries>
+51-->[androidx.test:runner:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\48581828baf96bc70a0a3b8247815810\transformed\runner-1.6.1\AndroidManifest.xml:24:5-28:15
+52        <package android:name="androidx.test.orchestrator" />
+52-->[androidx.test:runner:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\48581828baf96bc70a0a3b8247815810\transformed\runner-1.6.1\AndroidManifest.xml:25:9-62
+52-->[androidx.test:runner:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\48581828baf96bc70a0a3b8247815810\transformed\runner-1.6.1\AndroidManifest.xml:25:18-59
+53        <package android:name="androidx.test.services" />
+53-->[androidx.test:runner:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\48581828baf96bc70a0a3b8247815810\transformed\runner-1.6.1\AndroidManifest.xml:26:9-58
+53-->[androidx.test:runner:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\48581828baf96bc70a0a3b8247815810\transformed\runner-1.6.1\AndroidManifest.xml:26:18-55
+54        <package android:name="com.google.android.apps.common.testing.services" />
+54-->[androidx.test:runner:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\48581828baf96bc70a0a3b8247815810\transformed\runner-1.6.1\AndroidManifest.xml:27:9-83
+54-->[androidx.test:runner:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\48581828baf96bc70a0a3b8247815810\transformed\runner-1.6.1\AndroidManifest.xml:27:18-80
+55        <package android:name="com.google.ar.core" />
+55-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:21:9-54
+55-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:21:18-51
+56        <package android:name="com.android.vending" />
+56-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:22:9-55
+56-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:22:18-52
+57
+58        <intent>
+58-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:24:9-26:18
+59            <action android:name="com.google.android.play.core.install.BIND_INSTALL_SERVICE" />
+59-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:25:13-96
+59-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:25:21-93
+60        </intent>
+61    </queries>
+62
+63    <application
+63-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:3:3-6:42
+64        android:name="com.unity3d.player.NavApp"
+64-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:4:7-47
+65        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+65-->[androidx.core:core:1.13.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\58bfe695e7134e003662dc8a05f18e1e\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+66        android:debuggable="true"
+67        android:enableOnBackInvokedCallback="false"
+67-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:32:9-52
+68        android:extractNativeLibs="true"
+69        android:icon="@mipmap/train_image"
+69-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:5:7-41
+70        android:label="@string/app_name" >
+70-->C:\Users\Bhrigu\Downloads\app\app\launcher\src\main\AndroidManifest.xml:6:7-39
+71        <meta-data
+71-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:34:9-36:33
+72            android:name="unity.splash-mode"
+72-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:35:13-45
+73            android:value="1" />
+73-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:36:13-30
+74        <meta-data
+74-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:37:9-39:37
+75            android:name="unity.splash-enable"
+75-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:38:13-47
+76            android:value="false" />
+76-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:39:13-34
+77        <meta-data
+77-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:40:9-42:36
+78            android:name="unity.launch-fullscreen"
+78-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:41:13-51
+79            android:value="True" />
+79-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:42:13-33
+80        <meta-data
+80-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:43:9-45:36
+81            android:name="unity.render-outside-safearea"
+81-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:44:13-57
+82            android:value="True" />
+82-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:45:13-33
+83        <meta-data
+83-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:46:9-48:50
+84            android:name="notch.config"
+84-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:47:13-40
+85            android:value="portrait|landscape" />
+85-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:48:13-47
+86        <meta-data
+86-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:49:9-51:36
+87            android:name="unity.auto-report-fully-drawn"
+87-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:50:13-57
+88            android:value="true" />
+88-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:51:13-33
+89        <meta-data
+89-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:52:9-54:36
+90            android:name="unity.auto-set-game-state"
+90-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:53:13-53
+91            android:value="true" />
+91-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:54:13-33
+92        <meta-data
+92-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:55:9-57:36
+93            android:name="unity.strip-engine-code"
+93-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:56:13-51
+94            android:value="true" />
+94-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:57:13-33
+95
+96        <activity
+96-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:59:9-84:20
+97            android:name="com.unity3d.player.UnityPlayerGameActivity"
+97-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:60:13-70
+98            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+98-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:61:13-194
+99            android:enabled="true"
+99-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:62:13-35
+100            android:exported="true"
+100-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:63:13-36
+101            android:hardwareAccelerated="false"
+101-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:64:13-48
+102            android:launchMode="singleTask"
+102-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:65:13-44
+103            android:resizeableActivity="true"
+103-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:66:13-46
+104            android:screenOrientation="fullUser"
+104-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:67:13-49
+105            android:theme="@style/BaseUnityGameActivityTheme" >
+105-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:68:13-62
+106            <meta-data
+106-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:69:13-71:40
+107                android:name="unityplayer.UnityActivity"
+107-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:70:17-57
+108                android:value="true" />
+108-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:71:17-37
+109            <meta-data
+109-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:72:13-74:40
+110                android:name="android.app.lib_name"
+110-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:73:17-52
+111                android:value="game" />
+111-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:74:17-37
+112            <meta-data
+112-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:75:13-77:71
+113                android:name="WindowManagerPreference:FreeformWindowSize"
+113-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:76:17-74
+114                android:value="@string/FreeformWindowSize_maximize" />
+114-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:77:17-68
+115            <meta-data
+115-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:78:13-80:79
+116                android:name="WindowManagerPreference:FreeformWindowOrientation"
+116-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:79:17-81
+117                android:value="@string/FreeformWindowOrientation_landscape" />
+117-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:80:17-76
+118            <meta-data
+118-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:81:13-83:40
+119                android:name="notch_support"
+119-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:82:17-45
+120                android:value="true" />
+120-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:83:17-37
+121        </activity>
+122        <activity
+122-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:85:9-110:20
+123            android:name="com.unity3d.player.SplashActivity"
+123-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:86:13-61
+124            android:exported="true"
+124-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:87:13-36
+125            android:theme="@style/BaseUnityGameActivityTheme" >
+125-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:88:13-62
+126            <meta-data
+126-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:69:13-71:40
+127                android:name="unityplayer.UnityActivity"
+127-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:70:17-57
+128                android:value="true" />
+128-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:71:17-37
+129            <meta-data
+129-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:72:13-74:40
+130                android:name="android.app.lib_name"
+130-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:73:17-52
+131                android:value="game" />
+131-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:74:17-37
+132            <meta-data
+132-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:75:13-77:71
+133                android:name="WindowManagerPreference:FreeformWindowSize"
+133-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:76:17-74
+134                android:value="@string/FreeformWindowSize_maximize" />
+134-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:77:17-68
+135            <meta-data
+135-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:78:13-80:79
+136                android:name="WindowManagerPreference:FreeformWindowOrientation"
+136-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:79:17-81
+137                android:value="@string/FreeformWindowOrientation_landscape" />
+137-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:80:17-76
+138            <meta-data
+138-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:81:13-83:40
+139                android:name="notch_support"
+139-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:82:17-45
+140                android:value="true" />
+140-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:83:17-37
+141
+142            <intent-filter>
+142-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:105:13-109:29
+143                <action android:name="android.intent.action.MAIN" />
+143-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:106:17-69
+143-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:106:25-66
+144
+145                <category android:name="android.intent.category.LAUNCHER" />
+145-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:108:17-77
+145-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:108:27-74
+146            </intent-filter>
+147        </activity>
+148        <activity
+148-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:111:9-114:65
+149            android:name="com.unity3d.player.LanguageScreen.LanguageSelectScreen"
+149-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:112:13-82
+150            android:configChanges="orientation|screenSize"
+150-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:113:13-59
+151            android:theme="@style/BaseUnityGameActivityTheme" />
+151-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:114:13-62
+152        <activity
+152-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:115:9-118:65
+153            android:name="com.unity3d.player.NavScreen.NavScreen"
+153-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:116:13-66
+154            android:configChanges="orientation|screenSize"
+154-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:117:13-59
+155            android:theme="@style/BaseUnityGameActivityTheme" />
+155-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:118:13-62
+156        <activity
+156-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:119:9-122:65
+157            android:name="com.unity3d.player.destinationSelectActivity.DestinationSelectActivity"
+157-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:120:13-98
+158            android:configChanges="orientation|screenSize"
+158-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:121:13-59
+159            android:theme="@style/BaseUnityGameActivityTheme" />
+159-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:122:13-62
+160        <activity
+160-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:123:9-126:65
+161            android:name="com.unity3d.player.OTPScreen.OTPScreen"
+161-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:124:13-66
+162            android:configChanges="orientation|screenSize"
+162-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:125:13-59
+163            android:theme="@style/BaseUnityGameActivityTheme" />
+163-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:126:13-62
+164        <activity
+164-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:127:9-130:65
+165            android:name="com.unity3d.player.SignInPage.SignInPage"
+165-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:128:13-68
+166            android:configChanges="orientation|screenSize"
+166-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:129:13-59
+167            android:theme="@style/BaseUnityGameActivityTheme" />
+167-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:130:13-62
+168        <activity
+168-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:131:9-134:65
+169            android:name="com.unity3d.player.StationSelectScreen.StationSelectActivity"
+169-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:132:13-88
+170            android:configChanges="orientation|screenSize"
+170-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:133:13-59
+171            android:theme="@style/BaseUnityGameActivityTheme" />
+171-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:134:13-62
+172
+173        <meta-data
+173-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:136:9-138:36
+174            android:name="unityplayer.SkipPermissionsDialog"
+174-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:137:13-61
+175            android:value="true" />
+175-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:138:13-33
+176        <meta-data
+176-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:139:9-141:40
+177            android:name="com.google.ar.core"
+177-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:140:13-46
+178            android:value="required" />
+178-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:141:13-37
+179
+180        <service
+180-->[androidx.room:room-runtime:2.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\eced8afad02292ffa50114221e682ec5\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+181            android:name="androidx.room.MultiInstanceInvalidationService"
+181-->[androidx.room:room-runtime:2.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\eced8afad02292ffa50114221e682ec5\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+182            android:directBootAware="true"
+182-->[androidx.room:room-runtime:2.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\eced8afad02292ffa50114221e682ec5\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+183            android:exported="false" />
+183-->[androidx.room:room-runtime:2.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\eced8afad02292ffa50114221e682ec5\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+184
+185        <activity
+185-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
+186            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+186-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
+187            android:excludeFromRecents="true"
+187-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
+188            android:exported="true"
+188-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
+189            android:launchMode="singleTask"
+189-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
+190            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+190-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
+191            <intent-filter>
+191-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
+192                <action android:name="android.intent.action.VIEW" />
+192-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+192-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+193
+194                <category android:name="android.intent.category.DEFAULT" />
+194-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+194-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+195                <category android:name="android.intent.category.BROWSABLE" />
+195-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+195-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+196
+197                <data
+197-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+198                    android:host="firebase.auth"
+198-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+199                    android:path="/"
+199-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+200                    android:scheme="genericidp" />
+200-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+201            </intent-filter>
+202        </activity>
+203        <activity
+203-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
+204            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+204-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
+205            android:excludeFromRecents="true"
+205-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
+206            android:exported="true"
+206-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
+207            android:launchMode="singleTask"
+207-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
+208            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+208-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
+209            <intent-filter>
+209-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
+210                <action android:name="android.intent.action.VIEW" />
+210-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+210-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+211
+212                <category android:name="android.intent.category.DEFAULT" />
+212-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+212-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+213                <category android:name="android.intent.category.BROWSABLE" />
+213-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+213-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+214
+215                <data
+215-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+216                    android:host="firebase.auth"
+216-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+217                    android:path="/"
+217-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+218                    android:scheme="recaptcha" />
+218-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+219            </intent-filter>
+220        </activity>
+221
+222        <service
+222-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
+223            android:name="com.google.firebase.components.ComponentDiscoveryService"
+223-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:67:13-84
+224            android:directBootAware="true"
+224-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+225            android:exported="false" >
+225-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:68:13-37
+226            <meta-data
+226-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
+227                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+227-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
+228                android:value="com.google.firebase.components.ComponentRegistrar" />
+228-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\bc34719b75d4618dda3f9794bbf5412e\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
+229            <meta-data
+229-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\ee5704ae9866f910a4f8f8626ae9efae\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+230                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+230-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\ee5704ae9866f910a4f8f8626ae9efae\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+231                android:value="com.google.firebase.components.ComponentRegistrar" />
+231-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\ee5704ae9866f910a4f8f8626ae9efae\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+232            <meta-data
+232-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+233                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+233-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+234                android:value="com.google.firebase.components.ComponentRegistrar" />
+234-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+235        </service>
+236        <service
+236-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+237            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+237-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+238            android:enabled="true"
+238-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+239            android:exported="false" >
+239-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+240            <meta-data
+240-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+241                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+241-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+242                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+242-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+243        </service>
+244
+245        <activity
+245-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+246            android:name="androidx.credentials.playservices.HiddenActivity"
+246-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+247            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+247-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+248            android:enabled="true"
+248-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+249            android:exported="false"
+249-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+250            android:fitsSystemWindows="true"
+250-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+251            android:theme="@style/Theme.Hidden" >
+251-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Bhrigu\.gradle\caches\transforms-4\344efedcf6f8cae31585f2c9a12e0cb1\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+252        </activity>
+253        <activity
+253-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+254            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+254-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+255            android:excludeFromRecents="true"
+255-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+256            android:exported="false"
+256-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+257            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+257-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+258        <!--
+259            Service handling Google Sign-In user revocation. For apps that do not integrate with
+260            Google Sign-In, this service will never be started.
+261        -->
+262        <service
+262-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+263            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+263-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+264            android:exported="true"
+264-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+265            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+265-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+266            android:visibleToInstantApps="true" />
+266-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\c4bbbe6b709e8e32359837c336d92f99\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+267
+268        <provider
+268-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+269            android:name="com.google.firebase.provider.FirebaseInitProvider"
+269-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+270            android:authorities="com.fdgs.indoornav.firebaseinitprovider"
+270-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+271            android:directBootAware="true"
+271-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+272            android:exported="false"
+272-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+273            android:initOrder="100" />
+273-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\dd3b42f61449f34013d933ddee0d8e63\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+274
+275        <activity
+275-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\7cb5b4d190fee06620ec8fe008ec1e7e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+276            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+276-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\7cb5b4d190fee06620ec8fe008ec1e7e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+277            android:exported="false"
+277-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\7cb5b4d190fee06620ec8fe008ec1e7e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+278            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+278-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\7cb5b4d190fee06620ec8fe008ec1e7e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+279        <activity
+279-->[androidx.compose.ui:ui-test-manifest:1.7.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\e44097916e60318ef828c4eb9cc8ff0a\transformed\jetified-ui-test-manifest-1.7.1\AndroidManifest.xml:23:9-25:39
+280            android:name="androidx.activity.ComponentActivity"
+280-->[androidx.compose.ui:ui-test-manifest:1.7.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\e44097916e60318ef828c4eb9cc8ff0a\transformed\jetified-ui-test-manifest-1.7.1\AndroidManifest.xml:24:13-63
+281            android:exported="true" />
+281-->[androidx.compose.ui:ui-test-manifest:1.7.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\e44097916e60318ef828c4eb9cc8ff0a\transformed\jetified-ui-test-manifest-1.7.1\AndroidManifest.xml:25:13-36
+282        <activity
+282-->[androidx.compose.ui:ui-tooling-android:1.7.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\93c001844399594de482cfe471d27a42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:23:9-25:39
+283            android:name="androidx.compose.ui.tooling.PreviewActivity"
+283-->[androidx.compose.ui:ui-tooling-android:1.7.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\93c001844399594de482cfe471d27a42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:24:13-71
+284            android:exported="true" />
+284-->[androidx.compose.ui:ui-tooling-android:1.7.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\93c001844399594de482cfe471d27a42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:25:13-36
+285
+286        <provider
+286-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\a74c789cc1a05fe44d38fa8b2f0e8c13\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+287            android:name="androidx.startup.InitializationProvider"
+287-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\a74c789cc1a05fe44d38fa8b2f0e8c13\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+288            android:authorities="com.fdgs.indoornav.androidx-startup"
+288-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\a74c789cc1a05fe44d38fa8b2f0e8c13\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+289            android:exported="false" >
+289-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\a74c789cc1a05fe44d38fa8b2f0e8c13\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+290            <meta-data
+290-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\a74c789cc1a05fe44d38fa8b2f0e8c13\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+291                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+291-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\a74c789cc1a05fe44d38fa8b2f0e8c13\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+292                android:value="androidx.startup" />
+292-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\a74c789cc1a05fe44d38fa8b2f0e8c13\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+293            <meta-data
+293-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Bhrigu\.gradle\caches\transforms-4\f6abd03060cc17a87cde94dc0ed9194c\transformed\jetified-lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+294                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+294-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Bhrigu\.gradle\caches\transforms-4\f6abd03060cc17a87cde94dc0ed9194c\transformed\jetified-lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+295                android:value="androidx.startup" />
+295-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Bhrigu\.gradle\caches\transforms-4\f6abd03060cc17a87cde94dc0ed9194c\transformed\jetified-lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+296            <meta-data
+296-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+297                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+297-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+298                android:value="androidx.startup" />
+298-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+299        </provider>
+300
+301        <activity
+301-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:27:9-34:20
+302            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+302-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:28:13-99
+303            android:exported="true"
+303-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:29:13-36
+304            android:theme="@style/WhiteBackgroundTheme" >
+304-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:30:13-56
+305            <intent-filter android:priority="-100" >
+305-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:31:13-33:29
+305-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:31:28-51
+306                <category android:name="android.intent.category.LAUNCHER" />
+306-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:108:17-77
+306-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:108:27-74
+307            </intent-filter>
+308        </activity>
+309        <activity
+309-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:35:9-42:20
+310            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+310-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:36:13-95
+311            android:exported="true"
+311-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:37:13-36
+312            android:theme="@style/WhiteBackgroundTheme" >
+312-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:38:13-56
+313            <intent-filter android:priority="-100" >
+313-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:31:13-33:29
+313-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:31:28-51
+314                <category android:name="android.intent.category.LAUNCHER" />
+314-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:108:17-77
+314-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:108:27-74
+315            </intent-filter>
+316        </activity>
+317        <activity
+317-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:43:9-50:20
+318            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+318-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:44:13-103
+319            android:exported="true"
+319-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:45:13-36
+320            android:theme="@style/WhiteBackgroundDialogTheme" >
+320-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:46:13-62
+321            <intent-filter android:priority="-100" >
+321-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:31:13-33:29
+321-->[androidx.test:core:1.6.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\8107d20865f6952bb342f7c08f3b77db\transformed\jetified-core-1.6.1\AndroidManifest.xml:31:28-51
+322                <category android:name="android.intent.category.LAUNCHER" />
+322-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:108:17-77
+322-->[:unityLibrary] C:\Users\Bhrigu\Downloads\app\app\unityLibrary\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:108:27-74
+323            </intent-filter>
+324        </activity>
+325
+326        <meta-data
+326-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\fab6c3b1f0c8b8e6d815722de11ee5a1\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+327            android:name="com.google.android.gms.version"
+327-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\fab6c3b1f0c8b8e6d815722de11ee5a1\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+328            android:value="@integer/google_play_services_version" />
+328-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Bhrigu\.gradle\caches\transforms-4\fab6c3b1f0c8b8e6d815722de11ee5a1\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+329
+330        <receiver
+330-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+331            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+331-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+332            android:directBootAware="false"
+332-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+333            android:enabled="true"
+333-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+334            android:exported="true"
+334-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+335            android:permission="android.permission.DUMP" >
+335-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+336            <intent-filter>
+336-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+337                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+337-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+337-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+338            </intent-filter>
+339            <intent-filter>
+339-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+340                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+340-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+340-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+341            </intent-filter>
+342            <intent-filter>
+342-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+343                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+343-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+343-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+344            </intent-filter>
+345            <intent-filter>
+345-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+346                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+346-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+346-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Bhrigu\.gradle\caches\transforms-4\bde84e5c808844d6869af454470000c6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+347            </intent-filter>
+348        </receiver> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+349        <meta-data
+349-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:32:9-34:41
+350            android:name="com.google.ar.core.min_apk_version"
+350-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:33:13-62
+351            android:value="240220000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+351-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:34:13-38
+352        <activity
+352-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:36:9-42:80
+353            android:name="com.google.ar.core.InstallActivity"
+353-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:37:13-62
+354            android:configChanges="keyboardHidden|orientation|screenSize"
+354-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:38:13-74
+355            android:excludeFromRecents="true"
+355-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:39:13-46
+356            android:exported="false"
+356-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:40:13-37
+357            android:launchMode="singleTop"
+357-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:41:13-43
+358            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+358-->[:arcore_client:] C:\Users\Bhrigu\.gradle\caches\transforms-4\721358c5467108c60b2ce3e6b46f4bfe\transformed\jetified-arcore_client\AndroidManifest.xml:42:13-77
+359    </application>
+360
+361</manifest>

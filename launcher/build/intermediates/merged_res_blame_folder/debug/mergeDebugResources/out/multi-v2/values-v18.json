@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.fdgs.indoornav.launcher-mergeDebugResources-78:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Bhrigu\\.gradle\\caches\\transforms-4\\8107d20865f6952bb342f7c08f3b77db\\transformed\\jetified-core-1.6.1\\res\\values-v18\\values.xml",
+                    "from": {
+                        "startLines": "4,12",
+                        "startColumns": "0,0",
+                        "startOffsets": "146,562",
+                        "endLines": "11,19",
+                        "endColumns": "8,8",
+                        "endOffsets": "561,975"
+                    },
+                    "to": {
+                        "startLines": "3,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "104,524",
+                        "endLines": "10,18",
+                        "endColumns": "8,8",
+                        "endOffsets": "519,937"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Bhrigu\\.gradle\\caches\\transforms-4\\b006bde0ea20c0c1d90e05bc19fb9b3b\\transformed\\appcompat-1.7.0\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

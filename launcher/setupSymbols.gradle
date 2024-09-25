@@ -1,0 +1,125 @@
+// Defines logic for:
+// - embedding symbols_table/debug symbols into the bundle.
+// - for creating symbols zip with files having .so extension
+
+// UnityLibrary has to be evaluated first, so we could find buildIl2Cpp task
+evaluationDependsOn(':unityLibrary')
+
+def insertCopyInfo(Hashtable<String, String> map,
+                   String targetDirectory,
+                   String extension,
+                   File sourceFile) {
+    def abi = sourceFile.getParentFile().getName();
+    def fileName = sourceFile.getName();
+    def targetAbi = file(targetDirectory).toPath().resolve(abi)
+    def dst = targetAbi.resolve(fileName + extension).toString()
+    map.put(sourceFile.getAbsolutePath(), dst)
+}
+
+def constructCopyInfoForUnitySymbols(Project unityLibrary, String targetDirectory, String extension, Task buildIl2CppTask) {
+    def unityLibraryRoot = unityLibrary.projectDir.toPath()
+    def unitySymbols = unityLibraryRoot.resolve('symbols')
+    // Note: libil2cpp.so might not yet exist, thus querying directory won't return libil2cpp.so
+    def files = fileTree(unitySymbols)
+    def result = new Hashtable<String, String>()
+
+    for (File f: files) {
+        insertCopyInfo(result, targetDirectory, extension, f)
+    }
+
+    if (buildIl2CppTask != null) {
+        buildIl2CppTask.outputs.files.each { it ->
+            String path = it.toString()
+            if (!path.contains(unitySymbols.toString()))
+                return;
+            insertCopyInfo(result, targetDirectory, extension, it)
+        }
+    }
+
+    return result
+}
+
+def setupSymbols(String configName, String symbolType, String extension) {
+    def dependee = tasks.findByName("extract${configName}Native${symbolType}");
+    if (dependee == null)
+        return;
+
+
+    def unityLibrary = project(':unityLibrary')
+    def buildIl2CppTask = unityLibrary.tasks.findByName('buildIl2Cpp')
+    def copyTaskName = "copy${configName}Unity${symbolType}";
+    def copyInfo = constructCopyInfoForUnitySymbols(unityLibrary, dependee.outputs.files.asPath, extension, buildIl2CppTask)
+    def task = tasks.register(copyTaskName) {
+        for (def c : copyInfo)
+        {
+            inputs.file c.key
+            outputs.file c.value
+        }
+        doLast {
+            def rootIdx = projectDir.getParent().toString().length() + 1;
+            println "Copying Unity symbols: "
+            for (def c : copyInfo) {
+                println "   ${c.key.substring(rootIdx)} -> ${c.value.substring(rootIdx)}"
+                ant.copy(tofile: c.value, file: c.key)
+            }
+        }
+    }
+
+    if (buildIl2CppTask != null)
+        task.get().dependsOn buildIl2CppTask
+
+    // 'copy{configName}Unity{symbolType}' must be executed after 'extract${configName}Native${symbolType}' task
+    // In case 'extract${configName}Native${symbolType}' produces same files as 'copy{configName}Unity{symbolType}'
+    dependee.finalizedBy copyTaskName
+
+    // native-debug-symbols.zip depends on 'copy{configName}Unity{symbolType}' task
+    def mergeNativeDebugMetadataTask = tasks.findByName("merge${configName}NativeDebugMetadata");
+    if (mergeNativeDebugMetadataTask != null)
+        mergeNativeDebugMetadataTask.dependsOn copyTaskName;
+
+    // 'copy{configName}Unity{symbolType}' must be executed after 'package{configName}Bundle'
+    def packageBundleTask = tasks.findByName("package${configName}Bundle");
+    if (packageBundleTask != null)
+        packageBundleTask.dependsOn copyTaskName;
+}
+
+def createMergeNativeDebugMetadataSoTask(String configName, String symbolType) {
+    def extractNativeSymbols = tasks.findByName("extract${configName}Native${symbolType}");
+    if (extractNativeSymbols == null)
+        return;
+
+    def copyUnitySymbolsTaskName = "copy${configName}Unity${symbolType}";
+    def copyUnitySymbolsTask = tasks.findByName(copyUnitySymbolsTaskName);
+
+    tasks.register("merge${configName}NativeDebugMetadataSo", Zip) {
+        dependsOn extractNativeSymbols, copyUnitySymbolsTask
+        from extractNativeSymbols.outputs.files.asPath
+        archiveFileName = "native-debug-symbols-so.zip"
+        destinationDirectory = file(tasks.findByName("merge${configName}NativeDebugMetadata").outputs.files.asPath).getParentFile()
+        rename '(.*\\.so)(.*)', '$1'
+    }
+}
+
+afterEvaluate {
+    def dbgLevel = project.android.defaultConfig.ndk.debugSymbolLevel == null ?
+            "none" :
+            project.android.defaultConfig.ndk.debugSymbolLevel.toString().toLowerCase();
+    if (dbgLevel.equals("none"))
+        return;
+
+    def symbolType = "SymbolTables";
+    def symbolExt = ".sym";
+    if (dbgLevel.equals("full"))
+    {
+        symbolType = "DebugMetadata";
+        symbolExt = ".dbg";
+    }
+
+    android.buildTypes.configureEach { buildType ->
+        // Turn 'debug' into 'Debug', 'release' into 'Release'
+        var c = buildType.name.substring(0, 1).toUpperCase() + buildType.name.substring(1)
+        setupSymbols(c, symbolType, symbolExt);
+
+        createMergeNativeDebugMetadataSoTask(c, symbolType)
+    }
+}
