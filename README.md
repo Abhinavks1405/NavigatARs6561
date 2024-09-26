@@ -33,4 +33,68 @@
    ```bash
    git clone https://github.com/yourusername/NavigatAR.git
 
+### Unity Setup
+
+1. Open the project in **Unity Hub**.
+
+2. Ensure **AR Foundation** and **ARCore XR Plugin** packages are installed via the **Package Manager**.
+
+3. Set up the build settings for Android:
+   - Go to **File > Build Settings**
+   - Switch platform to **Android**
+   - Click on **Player Settings** and configure the following:
+     - Set **Company Name** and **Product Name**
+     - In **Other Settings**, set **Scripting Backend** to `IL2CPP`
+     - Set **Target API Level** to `Android 7.0` or higher
+    
+### Android Studio Setup
+
+1. In **Unity**, build the project for Android:
+   - Go to **File > Build Settings**
+   - Click **Build**
+   - Choose a location to save the Android project
+
+2. Open **Android Studio** and select "Open an existing Android Studio project".
+
+3. Navigate to the folder where you saved the Android project and select it.
+
+4. Ensure you have the following in your `build.gradle` file:
+   ```gradle
+   android {
+       compileSdkVersion 29
+       defaultConfig {
+           minSdkVersion 24
+           targetSdkVersion 29
+       }
+   }
+5. Sync the project with **Gradle** files.
+
+6. Connect an AR-capable Android device to your computer.
+
+7. Click on **Run** to build and install the app on your device.
+
+## Usage
+
+1. Launch the **NavigatAR** app on your AR-capable Android device.
+
+2. Allow the app to access your camera and location.
+
+3. Select your destination from the available options.
+
+4. Follow the AR overlay and voice guidance to navigate to your chosen destination.
+
+## Contributing
+
+We welcome contributions to **NavigatAR**! Please read our `CONTRIBUTING.md` file for details on our code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License – see the `LICENSE.md` file for details.
+
+## Acknowledgements
+
+- **Unity** and **AR Foundation** for providing robust tools for AR development.
+- **Google ARCore** for enabling AR functionalities on Android devices.
+- **NavMesh** for efficient pathfinding and navigation capabilities within Unity.
+
 
