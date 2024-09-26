@@ -63,8 +63,8 @@
    android {
        compileSdkVersion 29
        defaultConfig {
-           minSdkVersion 24
-           targetSdkVersion 29
+           minSdkVersion 26
+           targetSdkVersion 34
        }
    }
 5. Sync the project with **Gradle** files.
